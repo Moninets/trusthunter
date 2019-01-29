@@ -1,0 +1,90 @@
+.th-advantages {
+  padding: 170px 0 155px;
+  @media (max-width: 1024px) {
+    padding: 80px 0;
+  }
+  .th-content {
+    max-width: 340px;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+      margin-left: 20px;
+      max-width: 100%;
+    }
+  }
+  &__title {
+    @include title;
+    font-size: 36px;
+    font-weight: 900;
+    color: $title-home;
+    margin-bottom: 20px;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+  .th-wrap {
+    &__title {
+      @include title;
+      font-size: 20px;
+      font-weight: 900;
+      color: $title-home;
+      position: relative;
+      padding-bottom: 5px;
+      display: inline-block;
+      margin-bottom: 53px;
+      @media (max-width: 1024px) {
+        font-size: 18px;
+        max-width: 100px;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 37px;
+        height: 3px;
+        background-color: $gold;
+        bottom: 0;
+      }
+    }
+    &__number {
+      @include title;
+      font-size: 144px;
+      font-weight: 900;
+      color: $number-color;
+      line-height: 1;
+      position: relative;
+      top: 30px;
+      @media (max-width: 768px) {
+        font-size: 120px;
+      }
+    }
+  }
+  .th-list {
+    counter-reset: list 0;
+    margin: 0;
+    padding: 0;
+    .th-item {
+      list-style-type: none;
+      @include content;
+      font-size: 20px;
+      line-height: 1.55;
+      color: $content-home;
+      position: relative;
+      margin-bottom: 15px;
+      padding-left: 35px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+      &:before {
+        position: absolute;
+        counter-increment: list;
+        content: counter(list) "";
+        font-size: 14px;
+        border: solid 1px $number-color;
+        left: 0;
+        border-radius: 50%;
+        top: 5px;
+        padding: 3px 8px;
+      }
+    }
+  }
+}

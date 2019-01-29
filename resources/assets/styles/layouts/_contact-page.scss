@@ -1,0 +1,77 @@
+/* BEGAN BANNER */
+.th-contact-banner {
+  padding: 139px 0 357px;
+  background-color: $bg-color;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  //background-size: cover;
+  background-position:60% 50%;
+  &__title {
+    margin: 0 0 0 90px;
+    max-width: 489px;
+    @include content;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $title-home;
+  }
+}
+
+/* BEGAN CONTACT FORM */
+.th-contact-form {
+  label {
+    display: block;
+    @include content;
+    font-size: 16px;
+    font-weight: 400;
+    color: $title-home;
+  }
+  .th-input {
+    display: block;
+    width: 100%;
+    max-width: 532px;
+    border: none;
+    border-bottom: 1px solid #6f84ca;
+    @include content;
+    font-size: 20px;
+    font-weight: 400;
+    color: $title-home;
+    margin-bottom: 50px;
+    opacity: 0.3;
+    padding-bottom: 11px;
+  }
+  .th-textarea {
+    @include content;
+    width: 100%;
+    max-width: 532px;
+    opacity: 0.3;
+    font-size: 20px;
+    font-weight: 400;
+    color: $title-home;
+    border: none;
+    border-bottom: 1px solid #6f84ca;
+  }
+  .th-button {
+    padding: 15px 35px;
+    border-radius: 2px;
+    background-color: $blue-color;
+    @include content;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: $white-color;
+    border: 1px solid #4e5b9e;
+    transition: .2s ease-in;
+    @media (max-width: 1024px) {
+      padding: 20px 50px;
+      margin-top: 10px;
+    }
+    &:hover {
+      background-color: #fff;
+      color: $blue-color;
+      text-decoration: none;
+    }
+  }
+}

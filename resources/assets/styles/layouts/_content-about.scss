@@ -1,0 +1,223 @@
+//* ABOUT */
+.th-template-about {
+  background-color: #fbfbfb;
+  padding: 123px 0 100px;
+  .th-wrap {
+    margin-left: 82px;
+    &__title {
+      @include content;
+      font-size: 45px;
+      font-weight: 400;
+      line-height: normal;
+      color: $title-home;
+      margin: 85px 0 24px;
+    }
+    &__content {
+      @include content;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.55;
+      letter-spacing: normal;
+      color: $title-home;
+      max-width: 489px;
+      margin-bottom: 42px;
+    }
+  }
+}
+
+/* BEGAN TEAM MEMBERS */
+
+.th-team {
+  padding: 160px 0 76px;
+  &__title {
+    @include title;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $about-title;
+    margin-bottom: 61px;
+    text-align: center;
+  }
+  .th-posts {
+    &__link {
+      display: block;
+
+    }
+    &__title {
+      @include title;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $title-home;
+      margin: 24px 0 4px;
+    }
+    &__content {
+      @include content;
+      font-size: 20px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $about-content;
+      margin-bottom: 45px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* BEGAN SUGGESTIONS */
+
+.th-suggestions {
+  padding: 76px 0;
+  &__title {
+    @include title;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $about-title;
+    margin-bottom: 64px;
+  }
+  img {
+    min-height: 102px;
+  }
+  &__title-name {
+    margin: 13px 0 32px;
+    @include title;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #35385b;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      bottom: -9px;
+      left: 0;
+      width: 35px;
+      height: 3px;
+      background: $yellow-color;
+    }
+  }
+  &__content {
+    @include content;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    color: #646464;
+    margin-top: 32px;
+    max-width: 278px;
+  }
+}
+
+/* BEGAN SCHEDULE */
+
+.th-schedule {
+  padding: 80px 0;
+  .container {
+    max-width: 1200px;
+  }
+  .th-seo {
+    padding: 46px 66px 46px 58px;
+    background-color: #fbfbfb;
+    &__title {
+      @include title;
+      font-size: 20px;
+      font-weight: 900;
+      color: $content-home;
+      margin-bottom: 27px;
+    }
+    &__content {
+      @include content;
+      max-width: 435px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: #646464;
+      margin-bottom: 33px;
+    }
+  }
+  .th-list__wrap {
+    padding-left: 45px;
+  }
+  &__title {
+    max-width: 338px;
+    @include title;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $content-home;
+    margin: 36px 0;
+  }
+  .th-list {
+    counter-reset: list 0;
+    margin: 0;
+    padding:0;
+    .th-item {
+      @include title;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 2.1;
+      letter-spacing: normal;
+      color: $content-home;
+      list-style-type: none;
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 25px;
+      &:before {
+        position: absolute;
+        counter-increment: list;
+        content: counter(list) "";
+        font-size: 14px;
+        font-weight: 400;
+        border: solid 1px $number-color;
+        color: $content-home;
+        @include title;
+        left: 0;
+        top: 5px;
+        border-radius: 50%;
+        padding: 0 9px;
+      }
+    }
+  }
+}
+
+/* BEGAN SERVICES */
+
+.th-services {
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: 68% 10%;
+  padding: 300px 0 36px;
+  .container {
+    max-width: 1300px;
+  }
+  img {
+    min-height: 268px;
+    vertical-align: bottom;
+  }
+  .th-top__content,
+  .th-bottom__content {
+    max-width: 315px;
+    @include content;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.55;
+    text-align: center;
+    color: #646464;
+    margin: 25px 0 118px;
+  }
+}
+

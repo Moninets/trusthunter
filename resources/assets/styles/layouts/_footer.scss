@@ -1,0 +1,95 @@
+.th-footer {
+  padding: 15px 0 50px;
+  background-color: $footer-color;
+  @media (max-width: 768px) {
+    padding: 15px 0 20px;
+  }
+  &__logo {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  &__navigation {
+    padding-top: 10px;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  .nav {
+    li {
+      a {
+        @include content;
+        height: 25px;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $title-menu;
+        text-decoration: none;
+        padding: 17px;
+        &:hover {
+          color: $gold;
+        }
+      }
+    }
+  }
+  .socials-wrap {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
+    .th-copyright {
+      @include title;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #595959;
+      padding-top: 10px;
+      @media (max-width: 768px) {
+        order: 1;
+        width: 100%;
+      }
+    }
+    .th-socials {
+      margin-right: 10px;
+      @media(max-width:768px) {
+        margin-right: 0;
+      }
+      &__list {
+        @media(max-width:768px) {
+          padding: 25px 0 0;
+        }
+      }
+      &__item {
+        display: inline-block;
+        + li {
+          margin-left: 10px;
+        }
+      }
+      &__link {
+        padding: 15px;
+        &:hover {
+          color: $gold;
+        }
+        i {
+          font-size: 40px;
+          @media(max-width:1024px) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

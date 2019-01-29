@@ -1,0 +1,57 @@
+.th-about {
+  padding: 150px 0 135px;
+  background-color: #fbfbfb;
+  text-align: center;
+  @media (max-width:768px) {
+    padding: 80px 0 40px;
+  }
+  &__title {
+    @include title;
+    font-size: 36px;
+    font-weight: 900;
+    color: $title-home;
+    margin-bottom: 25px;
+    @media (max-width:768px) {
+      font-size: 32px;
+    }
+  }
+  &__description {
+    @include content;
+    font-weight: 400;
+    line-height: 1.55;
+    font-size: 20px;
+    color: $content-home;
+    margin-bottom: 60px;
+    max-width: 680px;
+    display: inline-block;
+    @media (max-width:768px) {
+      font-size: 16px;
+    }
+  }
+  .th-content {
+    &__image {
+      margin-bottom: 30px;
+      display: inline-block;
+      min-height: 112px;
+    }
+    &__description {
+      @include title;
+      font-size: 20px;
+      font-weight: 900;
+      color: $title-home;
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    &__number {
+      @include title;
+      font-size: 64px;
+      font-weight: 900;
+      color: $number-color;
+      @media (max-width: 768px) {
+        font-size: 50px;
+      }
+    }
+  }
+}

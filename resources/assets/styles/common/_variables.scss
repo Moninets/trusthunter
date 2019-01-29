@@ -1,0 +1,34 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+
+
+/* colors for main-menu and footer-menu */
+
+$title-menu:#9697a8;
+$gold: #ffc14d;
+$menu-active: #151842;
+$footer-color: #f7f7f8;
+
+/* color for content template-home */
+$bg-color: #fbfbfb;
+$title-home: #151941;
+$content-home: #3f3f3f;
+$white-color: #fff;
+$blue-color: #4e5b9e;
+$yellow-color: #ffc14d;
+$number-color: #dfe1eb;
+
+/* color for content template-about */
+$about-title: #171b43;
+$about-content: #575757;
+
+/* color for content template-about */
